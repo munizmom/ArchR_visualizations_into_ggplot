@@ -114,11 +114,11 @@ f_heatmaps <- "heatmap/"
 space <-"               "
 rownames(t_selGenesF_top50.m) <- gsub("_"," ",rownames(t_selGenesF_top50.m))
 
-heatmapTonycols <- gplots::heatmap.2(t_selGenesF_top50.m, symm=F,symkey=T,symbreaks=T, scale="column",col = horizonExtra,dendrogram="row", Colv = F, Rowv=T,density.info="none",labCol = FALSE,
+heatmapHEcols <- gplots::heatmap.2(t_selGenesF_top50.m, symm=F,symkey=T,symbreaks=T, scale="column",col = horizonExtra,dendrogram="row", Colv = F, Rowv=T,density.info="none",labCol = FALSE,
  lhei = c(2,9), keysize =1.5,trace="none", margin=c(10, 14),cexCol=1.6, cexRow=1.2, cex.main=0.5, main=paste0( space,"cell Types markers"),);
 heatmapDef <- gplots::heatmap.2(t_selGenesF_top50.m, symm=F,symkey=T,symbreaks=T, scale="column",col = mycol3,dendrogram="row", Colv = F, Rowv=T,density.info="none",labCol = FALSE,
  lhei = c(2,9), keysize =1.5,trace="none", margin=c(10, 14),cexCol=1.6, cexRow=1.2, cex.main=0.5, main=paste0( space,"cell Types markers"),);
-plot(heatmapTonycols)
+plot(heatmapHEcols)
 plot(heatmapDef)
 dev.off();
 
