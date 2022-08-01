@@ -1,6 +1,6 @@
 # ArchR_visualizations_into_ggplot
 
-snATACseq analyses performed using ArchR package are really easy to perfoor however in the visualization area if you dont have computational biology background can be quite challenging to try to modify the plots. 
+snATACseq analyses performed using ArchR package are really easy to perform however in the visualization area if you dont have computational biology background can be quite challenging to try to modify the plots. 
 This collection of scripts will provide aid to the community, providing an easy way to extract the raw data from archR snATACSeq objects to produce in house visualizations of the results using ggplot or ggplot2 that are widely used by the biological community.
 
 ## Visualizations provided:
